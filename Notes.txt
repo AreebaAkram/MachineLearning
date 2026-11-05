@@ -13,3 +13,18 @@ Correlation between numerical features:	Heatmap
 Class distribution:	Count plot
 Relationship between categorical variables:	Crosstab / stacked bar chart
 
+## DECISION TREE
+-> Information gain will used to select features. how useful a feature is for splitting data into groups
+Information gain is biased towards choosing attributes with a large number of unique values 
+
+-> Entropy : measure of impurity in a dataset. level of uncertainity -> total amount of missing information in a system
+1. first calculate entropy of each attribute' class, then calculate information gain for each attribute. select attribute with highest information gain, that node becomes parent now, select accordingly for all next features
+
+-> Gini Index: choose attribute that produces less impurity in the dataset. 0 means no impurity, all values belong to single class. 
+
+Criterion	What it measures
+Gini:	Impurity
+Entropy:	Uncertainty
+Information Gain:	Reduction in entropy
+
+as the models slowly moves to certainity / clarity after selecting each node

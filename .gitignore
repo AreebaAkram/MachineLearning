@@ -1,4 +1,5 @@
 .ipynb_checkpoints/
+.devcontainer/
 __pycache__/
 .venv/
 venv/
