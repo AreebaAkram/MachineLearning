@@ -15,10 +15,11 @@ Relationship between categorical variables:	Crosstab / stacked bar chart
 
 ## DECISION TREE
 -> Information gain will used to select features. how useful a feature is for splitting data into groups
-Information gain is biased towards choosing attributes with a large number of unique values 
+Information gain is biased towards choosing attributes with a large number of unique values. Information Gain measures how much uncertainty is reduced after splitting a node.
 
 -> Entropy : measure of impurity in a dataset. level of uncertainity -> total amount of missing information in a system
 1. first calculate entropy of each attribute' class, then calculate information gain for each attribute. select attribute with highest information gain, that node becomes parent now, select accordingly for all next features
+Entropy also measures how mixed the classes are
 
 -> Gini Index: choose attribute that produces less impurity in the dataset. 0 means no impurity, all values belong to single class. 
 
@@ -28,3 +29,5 @@ Entropy:	Uncertainty
 Information Gain:	Reduction in entropy
 
 as the models slowly moves to certainity / clarity after selecting each node
+
+-> spliting in decision tree is based on threshold value that why no normalization and standardization required
