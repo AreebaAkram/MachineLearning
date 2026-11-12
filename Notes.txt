@@ -31,3 +31,23 @@ Information Gain:	Reduction in entropy
 as the models slowly moves to certainity / clarity after selecting each node
 
 -> spliting in decision tree is based on threshold value that why no normalization and standardization required
+
+## Random Forest:
+each tree uses diff columns and rows of data to make predictions. 
+-> reduces overfitting as each tree learns diff patterns
+
+-> Ensemble learning: combines multiple individual models (called "base learners") into a single, unified model to produce better predictions
+the models are homogenous in case of random forest
+
+-> Bootstrap Sampling (selecting random rows): no of rows in orignal dataset and bootstrap sample size is equal so that one row can be selected multiple times and one of the rows can't be selected at all
+
+no of tree = no of bootstrap samples. 
+-> Random Feature Selection: The random feature selection happens at each node where the tree considers a split, not just once for the entire tree.
+
+-> min_samples_split : no of rows present for that one specific parent node
+-> min samples leaf: no of row for tha one specfic category of the feature
+
+    min_samples_split=10,
+    min_samples_leaf=5
+Parent must have at least 10 rows to be considered for splitting.
+Each resulting child must have at least 5 rows.
