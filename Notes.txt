@@ -51,3 +51,7 @@ no of tree = no of bootstrap samples.
     min_samples_leaf=5
 Parent must have at least 10 rows to be considered for splitting.
 Each resulting child must have at least 5 rows.
+
+
+## Principal component analysis
+a new set of features called principal components.
