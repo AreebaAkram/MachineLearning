@@ -30,4 +30,11 @@ average absolute difference between actual and predicted values. treat all error
 ## RMSE:
 It maintains the strong penalty for large errors while converting the result back to the original unit of the target variable
 ## R^2 score
- the proportion of variance in the target variable that is explained by the regression model e.g., 0.87 means 87%
+the proportion of variance in the target variable that is explained by the regression model e.g., 0.87 means 87%
+
+# Cross-validation
+Cross-validation is a technique used to check how well a machine learning model performs on unseen data while preventing overfitting.
+
+1. Hold out cross validation : data is divided into two parts, train and test
+2. Stratfied cross validation: better for imbalanced classes, the class proportion remains balanced in both training and test data
+3. K-fold cross validation: splits the dataset into k equal-sized folds. The model is trained on k-1 folds and tested on the remaining fold. This process is repeated k times each time using a different fold for testing.
