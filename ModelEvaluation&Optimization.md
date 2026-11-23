@@ -35,6 +35,13 @@ the proportion of variance in the target variable that is explained by the regre
 # Cross-validation
 Cross-validation is a technique used to check how well a machine learning model performs on unseen data while preventing overfitting.
 
+it's actually the ml model performance evaluation technique, 
+
 1. Hold out cross validation : data is divided into two parts, train and test
 2. Stratfied cross validation: better for imbalanced classes, the class proportion remains balanced in both training and test data
 3. K-fold cross validation: splits the dataset into k equal-sized folds. The model is trained on k-1 folds and tested on the remaining fold. This process is repeated k times each time using a different fold for testing.
+
+its just the prerequiite technique to know which model should we use.
+we can also use it for hyperparameter tunign, where we can test with diff values
+
+helps you make an informed model-selection decision before committing to a final model.
