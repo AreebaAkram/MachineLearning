@@ -42,6 +42,12 @@ it's actually the ml model performance evaluation technique,
 3. K-fold cross validation: splits the dataset into k equal-sized folds. The model is trained on k-1 folds and tested on the remaining fold. This process is repeated k times each time using a different fold for testing.
 
 its just the prerequiite technique to know which model should we use.
-we can also use it for hyperparameter tunign, where we can test with diff values
+we can also use it for hyperparameter tuning, where we can test with diff values
 
 helps you make an informed model-selection decision before committing to a final model.
+
+# Overfitting & underfitting
+test the model on training and test data to make sure when the model is over fitted and underfitted
+Bias is error from overly simple model assumptions that miss real patterns, while variance is error from a model reacting too strongly to training data noise
+• High Bias (Underfitting): The model is too rigid or simple. It produces high error on both training and unseen test data.
+• High Variance (Overfitting): The model memorizes training data and random noise. Training error is low, but test error spikes on new data.
