@@ -46,8 +46,27 @@ we can also use it for hyperparameter tuning, where we can test with diff values
 
 helps you make an informed model-selection decision before committing to a final model.
 
-# Overfitting & underfitting
+# What can go wrong with a model?
+
+## Overfitting & underfitting
 test the model on training and test data to make sure when the model is over fitted and underfitted
 Bias is error from overly simple model assumptions that miss real patterns, while variance is error from a model reacting too strongly to training data noise
 • High Bias (Underfitting): The model is too rigid or simple. It produces high error on both training and unseen test data.
 • High Variance (Overfitting): The model memorizes training data and random noise. Training error is low, but test error spikes on new data.
+
+## Data Leakage:
+Data leakage occurs when information from outside the training dataset—or information that would not be available at the time of prediction—is inadvertently used to train a machine learning model. This causes the model to achieve artificially high scores during training and validation, only to fail when deployed on new, real-world data
+
+## Class imbalance:
+A model that predicts the majority class more frequently may achieve an apparently respectable accuracy while performing poorly on the minority class.
+
+## Anomalies:
+anomalies and outliers
+
+## Feature scaling
+## Multicollinearity
+occurs when two or more predictor variables in a regression model are highly correlated or linearly dependent, making it hard to isolate each variable's individual effect on the outcome
+
+## Concept drift and data drift
+Data drift	Input feature distributions change
+Concept drift	The relationship between inputs and target changes
