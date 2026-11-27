@@ -70,3 +70,32 @@ occurs when two or more predictor variables in a regression model are highly cor
 ## Concept drift and data drift
 Data drift	Input feature distributions change
 Concept drift	The relationship between inputs and target changes
+
+# Regularization:
+Regularization is a technique used to prevent a machine learning model from becoming unnecessarily complex and overfitting the training data. Regularization discourages the model from learning unnecessarily complex patterns.
+This means the model now has two objectives:
+1. Minimize prediction errors.
+2. Avoid unnecessarily large coefficients.
+
+a very high alpha value leads to underfitting
+
+Alpha: It controls how strongly the model penalizes large coefficients.
+
+## Lasso Regularization
+
+Adds the absolute values of coefficients as a penalty.
+Can reduce some coefficients to exactly zero. thus selecting only that are imp
+Performs feature selection.
+Useful when some features may be irrelevant.
+
+## Ridge Regularization
+Adds the squared values of coefficients as a penalty.
+Reduces coefficient magnitudes.
+Usually does not make coefficients exactly zero.
+Useful when several features contribute to predictions.
+
+## Elastic Net Regularization
+Combines both L1 and L2 penalties.
+Can perform feature selection.
+Also controls coefficient magnitudes.
+Useful when features are highly correlated or when you want a combination of both approaches.
