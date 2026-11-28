@@ -110,6 +110,10 @@ Model hyperparameters
 These are values that we configure before training. They control how the model learns. e.g., regularization, alpha, gamma, kernel type
 
 Our objective is to find hyperparameters that help the model generalize well to unseen data.
+Hyperparameters are configured before training; model parameters are learned during training.
 
 ## Method 1: Grid Search CV (cross validation)
 Grid Search tests every possible combination of hyperparameters that we provide.
+
+## Method 2: Random Search CV
+randomnly try diff combinations from the space
