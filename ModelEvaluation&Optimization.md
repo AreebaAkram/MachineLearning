@@ -99,3 +99,17 @@ Combines both L1 and L2 penalties.
 Can perform feature selection.
 Also controls coefficient magnitudes.
 Useful when features are highly correlated or when you want a combination of both approaches.
+
+
+# Hyperparameter tuning:
+is the process of selecting the optimal values for a machine learning model's hyperparameters
+
+Model parameters
+These are values that a model learns automatically during training. e.g., weights, and bias in linear reg
+Model hyperparameters
+These are values that we configure before training. They control how the model learns. e.g., regularization, alpha, gamma, kernel type
+
+Our objective is to find hyperparameters that help the model generalize well to unseen data.
+
+## Method 1: Grid Search CV (cross validation)
+Grid Search tests every possible combination of hyperparameters that we provide.
